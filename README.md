@@ -101,11 +101,11 @@ Object to handler Vehicle - (POST, PUT and PATCH -> Body Request)
 
 ```json
 {
-  "vehicle": "Gol GT",              // string
-  "brand": "FIAT",                  // string
-  "year": 2010,                     // integer
-  "sold": false,                    // boolean
-  "description": "Awesome vehicle"  // string
+  "vehicle": "Gol GT",
+  "brand": "FIAT",
+  "year": 2010,
+  "sold": false,
+  "description": "Awesome vehicle"
 }
 ```
 
