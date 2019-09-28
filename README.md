@@ -2,8 +2,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![node](https://img.shields.io/node/v/express)
 
-Structure for node.js projects involving typescript
-
 ## Getting Started
 
 This is a project developed as a test for the company: *Oficina5*.
