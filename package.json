@@ -1,0 +1,95 @@
+{
+  "name": "vehicles-nodejs-rest-api",
+  "version": "1.0.0",
+  "description": "Api to handler Vehicles with Node.js in the Mysql database",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "nodemon src/server.js",
+    "build": "",
+    "lint": "eslint --ignore-path .gitignore --ext .js src/",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "migrate": "npx sequelize db:migrate"
+  },
+  "keywords": [
+    "Node.js",
+    "MySQL"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.16.4",
+    "express-validator": "^6.2.0",
+    "method-override": "^3.0.0",
+    "mysql2": "^1.7.0",
+    "sequelize": "^5.19.0",
+    "winston": "^3.2.1"
+  },
+  "author": "Lucas B Ferreira",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "sequelize-cli": "^5.5.1",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.3",
+    "yorkie": "^2.0.0"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src",
+      ".env"
+    ],
+    "exec": "node ./src/server.js",
+    "ext": "js,json"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "standard"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    },
+    "roots": [
+      "<rootDir>/tests"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "gitHooks": {
+    "pre-commit": "npm run lint && npm run test"
+  }
+}
