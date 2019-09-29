@@ -1,9 +1,9 @@
 const expressLoader = require('./express')
-// const verifyDatabase = require('./database').verifyDatabaseConnection
+const database = require('../persistence/models')
 const Logger = require('./logger')
 
 module.exports = async ({ expressApp }) => {
-  // await verifyDatabase()
+  await database.sequelize.authenticate()
 
   Logger.info('✌️ Database loaded and connected!')
 

@@ -89,10 +89,15 @@ And ready! The application will be running on the port defined in your env "PORT
 ### Routes
 
 
-| Method               | Path                  | Description                         |
-|----------------------|-----------------------|-------------------------------------|
-| GET                  | /api/vehicles         | Fetch all vehicles                  |
-| POST                 | /api/vehicles         | Create new Vehicle                  |
+| Method               | Path                                             | Description                         |
+|----------------------|--------------------------------------------------|-------------------------------------|
+| GET                  | /api/vehicles                                    | Fetch all vehicles                  |
+| GET                  | /api/vehicles/:id                                | Fetch vehicle by ID                 |
+| GET                  | /api/vehicles/search?key=value&key=value         | Fetch vehicles by query params      |
+| POST                 | /api/vehicles                                    | Create new Vehicle                  |
+| PUT                  | /api/vehicles/:id                                | Update complete object vehicle      |
+| PATCH                | /api/vehicles/:id                                | Update partly object Vehicle        |
+| DELETE               | /api/vehicles/:id                                | Delete one vehicle by id            |
 
 
 Object to handler Vehicle - (POST, PUT and PATCH -> Body Request)
