@@ -93,7 +93,7 @@ And ready! The application will be running on the port defined in your env "PORT
 |----------------------|--------------------------------------------------|-------------------------------------|
 | GET                  | /api/vehicles                                    | Fetch all vehicles                  |
 | GET                  | /api/vehicles/:id                                | Fetch vehicle by ID                 |
-| GET                  | /api/vehicles/search?key=value&key=value         | Fetch vehicles by query params      |
+| GET                  | /api/vehicles/search?key=value&key=value         | Search vehicles by query params     |
 | POST                 | /api/vehicles                                    | Create new Vehicle                  |
 | PUT                  | /api/vehicles/:id                                | Update complete object vehicle      |
 | PATCH                | /api/vehicles/:id                                | Update partly object Vehicle        |
