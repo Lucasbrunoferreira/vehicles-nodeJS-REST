@@ -8,7 +8,7 @@
     "dev": "nodemon src/server.js",
     "build": "",
     "lint": "eslint --ignore-path .gitignore --ext .js src/",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "coverage": "jest --coverage",
     "migrate": "npx sequelize db:migrate"
   },
