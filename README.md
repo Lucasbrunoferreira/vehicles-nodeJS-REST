@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-This is a project developed as a test for the company: *Oficina5*.
+This is a project developed as a test for the company: *Oficina5*
 The project is a REST API, with vehicle theory, using NodeJS and persisting the data in the MySQL database.
 
 
